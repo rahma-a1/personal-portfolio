@@ -7,16 +7,13 @@ import BackToTopButton from './BackToTopButton.jsx'
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
       <Hero />
       <About />
       <Projects />
       <Contact />
       <Navbar />
-
-    {/* Back to top button */}
-      <BackToTopButton /> 
-
+      <BackToTopButton />
     </div>
   )
 }
