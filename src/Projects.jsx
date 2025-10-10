@@ -30,19 +30,25 @@ function Projects() {
 
   return (
     <section id="projects" className="py-24 bg-black text-white">
-      <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
-        <h2 className="text-5xl font-serif font-bold mb-16 text-burgundy-400 tracking-tight">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        {/* Section Title with subtle black border */}
+        <h2 className="text-5xl md:text-6xl font-serif font-extrabold mb-16 text-burgundy-400 tracking-tight inline-block px-6 py-2 border border-black/40 rounded-md">
           My Projects
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 shadow-lg hover:scale-105 hover:shadow-burgundy-600/50 transition-transform duration-500"
+              className="group relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl overflow-hidden transition-transform duration-500 hover:scale-105"
             >
-              <h3 className="text-2xl font-serif font-semibold mb-4 text-burgundy-300 group-hover:text-burgundy-400 transition-colors duration-300">
+              {/* Glow overlay */}
+              <div className="absolute inset-0 bg-burgundy-600/10 opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-3xl pointer-events-none"></div>
+
+              {/* Project Title */}
+              <h3 className="text-2xl font-serif font-semibold mb-4 text-burgundy-300 relative group-hover:text-burgundy-400 transition-colors duration-300">
                 {project.title}
+                <span className="block h-0.5 w-0 bg-burgundy-400 mt-1 transition-all duration-500 group-hover:w-full"></span>
               </h3>
 
               <p className="text-gray-300 text-base leading-relaxed mb-6 font-sans">
@@ -53,7 +59,7 @@ function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-burgundy-400 border border-burgundy-400 px-6 py-2 rounded-lg font-medium hover:bg-burgundy-500 hover:text-white transition-all duration-300"
+                className="inline-block bg-gradient-to-r from-burgundy-600 to-burgundy-700 text-white px-6 py-2 rounded-full font-medium shadow-lg hover:from-burgundy-700 hover:to-burgundy-800 hover:scale-105 transition-all duration-300"
               >
                 View on GitHub
               </a>

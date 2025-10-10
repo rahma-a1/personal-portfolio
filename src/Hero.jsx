@@ -48,26 +48,34 @@ function Hero() {
     }
   }, [currentIndex]);
 
+  // Scroll handlers
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="hero" className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center relative overflow-hidden">
       
       {/* HIGHLY VISIBLE BURGUNDY GLOW */}
       <div className="absolute inset-0">
-        {/* Main intense glow */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-burgundy-500 rounded-full opacity-60 mix-blend-screen filter blur-[120px] animate-pulse"></div>
-        
-        {/* Secondary glow for depth */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-burgundy-400 rounded-full opacity-50 mix-blend-screen filter blur-[90px] animate-pulse animation-delay-1500"></div>
-        
-        {/* Third glow for intensity */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-burgundy-600 rounded-full opacity-40 mix-blend-screen filter blur-[60px] animate-pulse animation-delay-3000"></div>
       </div>
-      
-      {/* Additional background overlay for contrast */}
+
       <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/70"></div>
       
       <div className="text-center z-10 px-4 max-w-4xl relative">
-        {/* Main greeting with BLACK OUTLINE */}
         <h1 className="text-5xl md:text-7xl font-elegant font-bold text-white mb-6 tracking-tight">
           Hi, I'm <span className="text-burgundy-400 relative">
             <span className="absolute inset-0 text-black blur-sm opacity-70">Rahma Abdela</span>
@@ -75,7 +83,6 @@ function Hero() {
           </span>
         </h1>
         
-        {/* Animated typing text with BLACK OUTLINE */}
         <div className="h-20 mb-8">
           <h2 className="text-2xl md:text-4xl font-sans-elegant text-gray-300 font-light tracking-wide">
             I'm a <span className="text-burgundy-400 relative">
@@ -85,27 +92,31 @@ function Hero() {
           </h2>
         </div>
         
-        {/* Professional description */}
         <p className="text-lg md:text-xl font-sans-elegant text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed tracking-wide">
           Computer Science student passionate about creating elegant solutions 
           to complex problems through code, creativity, and collaboration.
         </p>
         
-        {/* CTA Buttons with BLACK BORDERS */}
+        {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="bg-gradient-to-r from-burgundy-600 to-burgundy-700 hover:from-burgundy-700 hover:to-burgundy-800 text-white px-10 py-4 rounded-lg font-sans-elegant font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl border-2 border-black/50 hover:border-black/70 relative overflow-hidden">
+          <button
+            onClick={scrollToProjects}
+            className="bg-gradient-to-r from-burgundy-600 to-burgundy-700 hover:from-burgundy-700 hover:to-burgundy-800 text-white px-10 py-4 rounded-lg font-sans-elegant font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl border-2 border-black/50 hover:border-black/70 relative overflow-hidden"
+          >
             <span className="relative z-10">View My Work</span>
             <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-black/5"></div>
           </button>
           
-          <button className="border-2 border-burgundy-500 text-burgundy-400 hover:bg-burgundy-500 hover:text-white px-10 py-4 rounded-lg font-sans-elegant font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm bg-black/40 border-2 border-black/60 hover:border-black/80 relative overflow-hidden">
+          <button
+            onClick={scrollToContact}
+            className="border-2 border-burgundy-500 text-burgundy-400 hover:bg-burgundy-500 hover:text-white px-10 py-4 rounded-lg font-sans-elegant font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm bg-black/40 border-2 border-black/60 hover:border-black/80 relative overflow-hidden"
+          >
             <span className="relative z-10">Get In Touch</span>
             <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-black/5"></div>
           </button>
         </div>
       </div>
       
-      {/* Scroll indicator - shows when at top of page */}
       {showScrollIndicator && (
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
           <div className="flex flex-col items-center text-burgundy-400 drop-shadow-lg">

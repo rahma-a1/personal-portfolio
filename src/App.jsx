@@ -3,6 +3,7 @@ import About from './About.jsx'
 import Projects from './Projects.jsx'
 import Contact from './Contact.jsx'
 import Navbar from './Navbar.jsx'
+import BackToTopButton from './BackToTopButton.jsx'
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
       <Projects />
       <Contact />
       <Navbar />
+
+    {/* Back to top button */}
+      <BackToTopButton /> 
+
     </div>
   )
 }
