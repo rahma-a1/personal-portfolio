@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- ADD THIS STYLE TAG RIGHT HERE -->
+    <style>
+      /* Import elegant fonts */
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+      /* BRIGHT BURGUNDY COLOR PALETTE */
+      :root {
+        --burgundy-400: #D14D6A;  /* Much brighter */
+        --burgundy-500: #B8324D;
+        --burgundy-600: #9A2A3E;
+        --burgundy-700: #7C1F2F;
+        --burgundy-800: #5E1521;
+        --burgundy-900: #400C14;
+      }
+
+      /* Utility classes */
+      .bg-burgundy-400 { background-color: var(--burgundy-400) !important; }
+      .bg-burgundy-500 { background-color: var(--burgundy-500) !important; }
+      .bg-burgundy-600 { background-color: var(--burgundy-600) !important; }
+      .bg-burgundy-700 { background-color: var(--burgundy-700) !important; }
+      .bg-burgundy-800 { background-color: var(--burgundy-800) !important; }
+      .bg-burgundy-900 { background-color: var(--burgundy-900) !important; }
+      
+      .text-burgundy-400 { color: var(--burgundy-400) !important; }
+      .text-burgundy-500 { color: var(--burgundy-500) !important; }
+      
+      .border-burgundy-500 { border-color: var(--burgundy-500) !important; }
+      
+      /* Font classes */
+      .font-elegant { font-family: 'Playfair Display', serif; }
+      .font-sans-elegant { font-family: 'Inter', sans-serif; }
+
+      /* Animation delays */
+      .animation-delay-1000 { animation-delay: 1s; }
+      .animation-delay-2000 { animation-delay: 2s; }
+      .animation-delay-1500 { animation-delay: 1.5s; }
+      .animation-delay-3000 { animation-delay: 3s; }
+
+      /* Text outline/shadow effects */
+      .text-outline {
+        text-shadow: 
+          -1px -1px 0 black,
+          1px -1px 0 black,
+          -1px  1px 0 black,
+          1px  1px 0 black;
+      }
+
+      .text-outline-thick {
+        text-shadow: 
+          -2px -2px 0 black,
+          2px -2px 0 black,
+          -2px  2px 0 black,
+          2px  2px 0 black,
+          0    0   10px black;
+      }
+
+      .drop-shadow-heavy {
+        filter: drop-shadow(0 2px 4px black) drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+      }
+
+    </style>
   </head>
   <body>
     <div id="root"></div>

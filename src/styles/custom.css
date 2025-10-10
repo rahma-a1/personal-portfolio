@@ -1,0 +1,35 @@
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Burgundy Color Palette */
+:root {
+  --burgundy-400: #922B3E;
+  --burgundy-500: #7A1C2E;
+  --burgundy-600: #631225;
+  --burgundy-700: #4C091C;
+  --burgundy-800: #360613;
+}
+
+/* Custom utility classes */
+.bg-burgundy { background-color: var(--burgundy-500); }
+.text-burgundy-400 { color: var(--burgundy-400); }
+.text-burgundy-500 { color: var(--burgundy-500); }
+.bg-burgundy-600 { background-color: var(--burgundy-600); }
+.hover\:bg-burgundy-700:hover { background-color: var(--burgundy-700); }
+.border-burgundy-400 { border-color: var(--burgundy-400); }
+.border-burgundy-600 { border-color: var(--burgundy-600); }
+.bg-burgundy-800 { background-color: var(--burgundy-800); }
+
+/* Elegant font classes */
+.font-elegant { font-family: 'Playfair Display', serif; }
+.font-sans-elegant { font-family: 'Inter', sans-serif; }
+
+/* Animation delay utility */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+/* Custom shadow for burgundy */
+.hover\:shadow-burgundy-500\/30:hover {
+  box-shadow: 0 10px 30px rgba(146, 43, 62, 0.3);
+}

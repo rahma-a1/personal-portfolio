@@ -55,7 +55,7 @@ function About() {
                     </div>
                   </div>
                   
-                  <h3 className="text-2xl font-elegant font-semibold text-white mb-2">Rahma</h3>
+                  <h3 className="text-2xl font-elegant font-semibold text-white mb-2">Rahma Abdela</h3>
                   <p className="text-burgundy-400 font-sans-elegant font-medium mb-4">Computer Science Student</p>
                   
                   {/* Mini stats */}
