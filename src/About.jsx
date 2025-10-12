@@ -91,12 +91,12 @@ function About() {
               </h3>
               <div className="space-y-4">
                 <p className="text-lg font-sans-elegant text-gray-300 leading-relaxed">
-                  With a solid foundation in computer science principles and hands-on experience across multiple programming 
-                  paradigms, I specialize in creating solutions that are both technically robust and user-centric.
+                  With a solid foundation in computer science principles and hands-on experience in different styles of programming, 
+                  I specialize in creating solutions that are both reliable and user-focused.
                 </p>
                 <p className="text-lg font-sans-elegant text-gray-300 leading-relaxed">
-                  My approach combines analytical problem-solving with creative design thinking, ensuring that every 
-                  project not only functions flawlessly but also delivers an exceptional user experience.
+                  My approach combines analytical problem-solving with creative design thinking, ensuring that every project not 
+                  only works flawlessly but also delivers an exceptional user experience.
                 </p>
               </div>
             </div>
