@@ -26,6 +26,12 @@ function Projects() {
         "A Java program that manages soccer team data, including players, scores, and statistics, for easy tracking.",
       link: "https://github.com/rahma-a1/soccer-team-tracker",
     },
+    {
+      title: "YouTube Trending Analysis",
+      description:
+        "Analyzed trending YouTube videos using Python, Pandas, and Plotly to visualize top videos, engagement rates, and best publishing hours. Includes an interactive HTML dashboard.",
+      link: "https://github.com/rahma-a1/youtube-trending-analysis",
+    },
   ];
 
   return (

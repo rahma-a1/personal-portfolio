@@ -126,7 +126,7 @@ function About() {
               <div className="min-h-48">
                 {activeTab === 'skills' && (
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {['Python', 'Java', 'JavaScript', 'TypeScript', 'C/C++', 'C#', 'SQL', 'HTML5', 'CSS3', 'Assembly'].map((skill) => (
+                    {['Python', 'Java', 'JavaScript', 'C/C++', 'SQL', 'HTML5', 'CSS3', 'Assembly'].map((skill) => (
                       <div key={skill} className="bg-gray-900/40 rounded-lg p-4 text-center border border-gray-700/30 hover:border-burgundy-500/50 hover:bg-gray-900/60 transition-all duration-300 group">
                         <span className="text-gray-300 font-sans-elegant font-medium group-hover:text-white">{skill}</span>
                       </div>
