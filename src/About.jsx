@@ -136,7 +136,7 @@ function About() {
 
                 {activeTab === 'tools' && (
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {['React', 'Node.js', 'Next.js', 'Flask', 'JavaFx', 'Git', 'VS Code', 'IntelliJ', 'Azure', 'JUnit', 'Pandas', 'NumPy'].map((tool) => (
+                    {['React', 'Node.js', 'Next.js', 'Flask', 'JavaFx', 'Git', 'VS Code', 'IntelliJ', 'JUnit', 'Pandas', 'NumPy'].map((tool) => (
                       <div key={tool} className="bg-gray-900/40 rounded-lg p-4 text-center border border-gray-700/30 hover:border-burgundy-500/50 hover:bg-gray-900/60 transition-all duration-300 group">
                         <span className="text-gray-300 font-sans-elegant font-medium group-hover:text-white">{tool}</span>
                       </div>
